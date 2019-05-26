@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: jinput-2.0.9.jar RXTXcomm.jar
+Main-Class: app.Main
+

@@ -1,0 +1,1 @@
+java -Djava.library.path=jinput;rxtx/win_x86 -jar Joystick2PPM.jar
