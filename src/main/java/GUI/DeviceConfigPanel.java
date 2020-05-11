@@ -267,6 +267,7 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
                     return;
                 }
                 connect.setText(DISCONNECT);
+                GlobalProperties.getProperties().setProperty("COM",(String)comBox.getSelectedItem());
             } else {
                 workingThread.interrupt();
                 try {
@@ -287,6 +288,8 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
                         JOptionPane.WARNING_MESSAGE);
             } else {
                 worker.sendNewParameterAndTerminate(channelsBox.getSelectedIndex() + 1, modeBox.getSelectedIndex());
+                GlobalProperties.getProperties().setProperty("CHANNELS", String.valueOf(channelsBox.getSelectedIndex() + 1));
+                GlobalProperties.getProperties().setProperty("PPMTYPE", String.valueOf(modeBox.getSelectedIndex()));
                 try {
                     workingThread.join();
                 } catch (InterruptedException e1) {
@@ -298,7 +301,7 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
                 JOptionPane.showMessageDialog(this,
                         "PPM Stream Type Changed. \n" +
                                 "Please restart your transmitter from Power On/Off\n" +
-                                "After that you can connect do transmitter again.",
+                                "After that you can connect to transmitter again.",
                         "Warning", JOptionPane.WARNING_MESSAGE);
             }
         } else if (e.getSource() == v2) {
