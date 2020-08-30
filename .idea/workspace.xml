@@ -5,13 +5,97 @@
       <artifact name="Joystick2PPM:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1ece6322-92d2-4401-a478-d1071f5efd1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jserial/start.x64.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jserial/start.x86.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jserial/win_x64/jSerialComm.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jserial/win_x86/jSerialComm.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Joystick2PPM_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Joystick2PPM_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/RXTXcomm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdeaProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Joystick2PPM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/joystick2ppm.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/joystick2ppm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/RXTXcomm.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x64/rxtxParallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x64/rxtxSerial.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x64/start.x64.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x86/rxtxParallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x86/rxtxSerial.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rxtx/win_x86/start.x86.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_joystick2ppm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/RXTXcomm.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-dx8-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-dx8.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-dx8_64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-raw-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-raw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-raw_64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-test.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput-wintab.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/jinput.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/libjinput-linux.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/libjinput-linux64.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/jinput/libjinput-osx.jnilib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x64/rxtxParallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x64/rxtxSerial.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x64/start.x64.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x86/rxtxParallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x86/rxtxSerial.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/rxtx/win_x86/start.x86.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/start.x64.bat" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/start.x64.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/start.x86.bat" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/start.x86.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/AssignDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ButtonAssignDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$AnalogAxisPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$AxisPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$ControllerWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$DigitalAxisPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest$DigitalHatPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerReadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ControllerTextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/DeviceConfigPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/DeviceConfigPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/ReadAllEvents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/SignalConfigPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/AnalogAxisPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/ButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/ComponentConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/ControllerPanel$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/ControllerPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/ControllerPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/POVComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controller/POVPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/event/ControllerAddListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/tabs/ButtonTabComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/tabs/ButtonTabComponent$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/tabs/ButtonTabComponent$TabButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/tabs/ButtonTabComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ControllerUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/GlobalProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usb2ppm/ServoParameter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usb2ppm/Usb2PPMWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usb2ppm/event/DataSentEvent.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +131,28 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/rxtx/RXTXcomm.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/net/java/jinput/jinput/2.0.9/jinput-2.0.9.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="IntelliLang.Advanced" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin.scripting" />
+    <property name="settings.editor.splitter.proportion" value="0.2382892" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\lib\rxtx" />
-      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM" />
-      <recent name="C:\Users\Gego\IdeaProjects\rxtx_drivers\Joystick2PPM" />
-      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\src\main\java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\lib\rxtx" />
       <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\lib" />
       <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\X260\IdeaProjects\Joystick2PPM\lib" />
+      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\lib\rxtx" />
+      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM" />
+      <recent name="C:\Users\Gego\IdeaProjects\rxtx_drivers\Joystick2PPM" />
+      <recent name="C:\Users\Gego\IdeaProjects\Joystick2PPM\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Joystick2PPM.jar">
@@ -174,6 +260,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -197,26 +284,82 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1589226903663">
+    <state x="275" y="4" key="#Plugins" timestamp="1598546852897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589226903663" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1589226903663">
+    <state x="275" y="4" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1598546852897" />
+    <state x="163" y="0" key="#Project_Structure" timestamp="1598724520360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589226903663" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1589226903663">
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1598724520360" />
+    <state x="513" y="74" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1598718813581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589226903663" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1589226903663">
+    <state x="513" y="74" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1598718813581" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598545613921">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589226903663" />
-    <state x="389" y="97" width="587" height="534" key="find.popup" timestamp="1589227052483">
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1598545613921" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598720973797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="97" width="587" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1589227052483" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598720973797" />
+    <state x="413" y="118" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1598724765982">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598724765982" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1598724517892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598724517892" />
+    <state width="1323" height="273" key="GridCell.Tab.0.bottom" timestamp="1598780137702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="273" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598780137702" />
+    <state width="1323" height="273" key="GridCell.Tab.0.center" timestamp="1598780137702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="273" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598780137702" />
+    <state width="1323" height="273" key="GridCell.Tab.0.left" timestamp="1598780137702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="273" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598780137702" />
+    <state width="1323" height="273" key="GridCell.Tab.0.right" timestamp="1598780137702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="273" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598780137702" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1598722391409">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598722391409" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1598722391402">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598722391402" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1598722391402">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598722391402" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1598722391409">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598722391409" />
+    <state x="348" y="68" key="NewModule_or_Project.wizard" timestamp="1598724333322">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="68" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1598724333322" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1598725175626">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598725175626" />
+    <state x="387" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598721370170">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1598721370170" />
+    <state x="327" y="0" key="new project wizard" timestamp="1598724002403">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="327" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598724002403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -226,115 +369,10 @@
           <line>192</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Joystick2PPM$Joystick2PPM_jar.ic" NAME="Joystick2PPM.jar Coverage Results" MODIFIED="1558009029875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Joystick2PPM:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8.0_201</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Joystick2PPM</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8.0_201</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>RXTXcomm</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

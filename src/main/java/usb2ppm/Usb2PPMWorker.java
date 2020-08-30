@@ -1,6 +1,7 @@
 package usb2ppm;
 
-import gnu.io.SerialPort;
+import com.fazecast.jSerialComm.*;
+
 import GUI.controller.ComponentConfig;
 import usb2ppm.event.DataSentEvent;
 import net.java.games.input.Component;
@@ -12,8 +13,29 @@ import java.util.TreeMap;
 import java.util.Vector;
 
 /**
- * @author Alexandr Vorobiev
+ *     This file is part of joystick-to-ppm, a port of Flytron's Compufly
+ *     to Java for cross platform use.
+ *
+ *     The source was obtained from code.google.com/p/joystick-to-ppm
+ *     Copyright (C) 2011  Alexandr Vorobiev
+ *
+ *     Implemented new interface jserialComm
+ *     Copyright (C) 2020  Gregor Schlechtriem
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 public class Usb2PPMWorker implements Runnable {
     private static final String SET_V1 = "SET";
     private static final String SET_V2 = "S";
@@ -147,7 +169,7 @@ public class Usb2PPMWorker implements Runnable {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            serialPort.close();
+            serialPort.closePort();
         }
     }
 
@@ -208,6 +230,8 @@ public class Usb2PPMWorker implements Runnable {
         out.write(b);
         System.out.println("send cmd v="+(getSetCommand() +((char)channel)+""+((char)(value/256)) +""+ ((char)(value%256))));
         out.flush();
+
+
     }
     private void updateServoBar(int channel, int data) {
         for (DataSentEvent listener: listeners)

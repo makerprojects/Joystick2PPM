@@ -8,21 +8,19 @@
           <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
         </element>
       </element>
-      <element id="file-copy" path="$PROJECT_DIR$/lib/rxtx/win_x64/start.x64.bat" />
-      <element id="directory" name="rxtx">
-        <element id="directory" name="win_x64">
-          <element id="dir-copy" path="$PROJECT_DIR$/lib/rxtx/win_x64" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/jserial/start.x64.bat" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/jserial/start.x86.bat" />
+      <element id="directory" name="lib">
+        <element id="directory" name="jinput">
+          <element id="dir-copy" path="$PROJECT_DIR$/lib/jinput" />
         </element>
-        <element id="directory" name="win_x86">
-          <element id="dir-copy" path="$PROJECT_DIR$/lib/rxtx/win_x86" />
+        <element id="directory" name="jserial">
+          <element id="dir-copy" path="$PROJECT_DIR$/lib/jserial" />
         </element>
       </element>
-      <element id="file-copy" path="$PROJECT_DIR$/lib/rxtx/win_x86/start.x86.bat" />
-      <element id="directory" name="jinput">
-        <element id="dir-copy" path="$PROJECT_DIR$/lib/jinput" />
-      </element>
-      <element id="library" level="project" name="Maven: net.java.jinput:jinput:2.0.9" />
-      <element id="library" level="project" name="RXTXcomm" />
+      <element id="library" level="project" name="net.java.jinput:jinput:2.0.9" />
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/com/fazecast/jSerialComm/2.5.1/jSerialComm-2.5.1.jar" />
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/net/java/jinput/jinput/2.0.9/jinput-2.0.9.jar" />
     </root>
   </artifact>
 </component>

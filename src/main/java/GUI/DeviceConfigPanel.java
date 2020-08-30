@@ -1,8 +1,7 @@
 package GUI;
 
-import gnu.io.CommPort;
-import gnu.io.CommPortIdentifier;
-import gnu.io.SerialPort;
+import com.fazecast.jSerialComm.*;
+
 import GUI.controller.ComponentConfig;
 import usb2ppm.ServoParameter;
 import usb2ppm.Usb2PPMWorker;
@@ -20,10 +19,29 @@ import java.util.*;
 import properties.GlobalProperties;
 
 /**
- * User: Vorobyev Alexandr
- * Date: 24.08.11
- * Time: 22:15
+ *     This file is part of joystick-to-ppm, a port of Flytron's Compufly
+ *     to Java for cross platform use.
+ *
+ *     The source was obtained from code.google.com/p/joystick-to-ppm
+ *     Copyright (C) 2011  Alexandr Vorobiev
+ *
+ *     Implemented new interface jserialComm
+ *     Copyright (C) 2020  Gregor Schlechtriem
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 public class DeviceConfigPanel extends JPanel implements ActionListener, DataSentEvent, AdjustmentListener{
     public final static int SERVO_COUNT = 8;
     private static final String CONNECT = "Connect";
@@ -56,9 +74,9 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
         //v2.setVisible(false);
         v2.addActionListener(this);
         comBox = new JComboBox();
-        HashSet<CommPortIdentifier> set = getAvailableSerialPorts();
-        for (CommPortIdentifier port: set)
-            comBox.addItem(port.getName());
+        SerialPort[] comPort = SerialPort.getCommPorts();
+        for (int i = 0; i < comPort.length; i++)
+            comBox.addItem(comPort[i].getSystemPortName());
         if (comBox.getItemCount() > 0) {
             String selCom = (String)comBox.getSelectedItem();
             selCom = GlobalProperties.getProperties().getProperty("COM",selCom);
@@ -227,32 +245,6 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
     }
 
 
-
-    /**
-     * @return    A HashSet containing the CommPortIdentifier for all serial ports that are not currently being used.
-     */
-    public static HashSet<CommPortIdentifier> getAvailableSerialPorts() {
-        HashSet<CommPortIdentifier> h = new HashSet<CommPortIdentifier>();
-        Enumeration thePorts = CommPortIdentifier.getPortIdentifiers();
-        while (thePorts.hasMoreElements()) {
-            CommPortIdentifier com = (CommPortIdentifier) thePorts.nextElement();
-            switch (com.getPortType()) {
-            case CommPortIdentifier.PORT_SERIAL:
-               // try {
-                   // CommPort thePort = com.open("CommUtil", 50);
-                    //thePort.close();
-                    h.add(com);
-                //} catch (PortInUseException e) {
-                //    System.out.println("Port, "  + com.getName() + ", is in use.");
-               // } catch (Exception e) {
-                //    System.err.println("Failed to open port " +  com.getName());
-               //     e.printStackTrace();
-               // }
-            }
-        }
-        return h;
-    }
-
     public void actionPerformed(ActionEvent e) {
          if (e.getSource() == connect) {
             if (connect.getText().equals(CONNECT)) {
@@ -316,23 +308,24 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
 
     private void connect ( String portName ) throws Exception
     {
-        CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier(portName);
-        if ( portIdentifier.isCurrentlyOwned() )
+        SerialPort serialPort = SerialPort.getCommPort(portName);
+        if ( serialPort.isOpen() )
             throw new Exception("Port is currently in use");
         else {
             for (JProgressBar progressBar: servoBars)
                 progressBar.setValue(0);
-            CommPort commPort = portIdentifier.open(this.getClass().getName(),2000);
-            SerialPort serialPort = (SerialPort) commPort;
-            serialPort.setSerialPortParams(38400,SerialPort.DATABITS_8,SerialPort.STOPBITS_1,SerialPort.PARITY_NONE);
-            worker = new Usb2PPMWorker(serialPort, serialPort.getOutputStream(), v2.isSelected());
-            worker.addListener(this);
-            updateMapping();
-            updateParametersMap();
-            workingThread = new Thread(worker);
-            workingThread.start();
-
-
+            serialPort.openPort(2000);
+            if ( serialPort.isOpen()) {
+                serialPort.setComPortParameters(9600, 8, 1, 0);
+                worker = new Usb2PPMWorker(serialPort, serialPort.getOutputStream(), v2.isSelected());
+                worker.addListener(this);
+                updateMapping();
+                updateParametersMap();
+                workingThread = new Thread(worker);
+                workingThread.start();
+            } else {
+                throw new Exception("Cannot open port " + portName + "!");
+            }
         }
     }
 

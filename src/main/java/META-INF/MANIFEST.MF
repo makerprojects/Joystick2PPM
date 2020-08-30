@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Class-Path: jinput:2.0.9 rxtx:2.1.7
+Class-Path: jSerialComm-2.5.1.jar jinput-2.0.9.jar
 Main-Class: app.Main
 
