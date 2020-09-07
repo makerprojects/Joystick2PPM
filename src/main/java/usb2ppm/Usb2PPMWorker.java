@@ -19,7 +19,7 @@ import java.util.Vector;
  *     The source was obtained from code.google.com/p/joystick-to-ppm
  *     Copyright (C) 2011  Alexandr Vorobiev
  *
- *     Implemented new interface jserialComm
+ *     Implemented new interface jSerialComm
  *     Copyright (C) 2020  Gregor Schlechtriem
  *
  *     This program is free software: you can redistribute it and/or modify
