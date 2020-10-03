@@ -147,13 +147,23 @@ public class Usb2PPMWorker implements Runnable {
                                     entry.getKey().setPrevValue(data);
                                     servo(channel, data, 0, 1024, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
                                 } else {
-                                    if (fdata == 0.0f){
+                                    if ((fdata == 0.0f) && ((entry.getKey().getCharacteristics() == "Button") || ((!entry.getKey().getSwitchState()) && (entry.getKey().getCharacteristics() == "Switch")))) {
                                         servo(channel, 0, 0, 100, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
-                                    } else if (fdata == 1.0f) {
-                                        servo(channel, entry.getKey().getSentValue(), 0, 100, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
+                                        entry.getKey().setSwitchWas0(true);
+                                    } else if ((fdata == 1.0f) || (entry.getKey().getCharacteristics() == "Switch")) {
+                                        if ((entry.getKey().getCharacteristics() == "Switch") && (fdata == 1.0f)) {  // button is pushed
+                                            if ((!entry.getKey().getSwitchState()) && (entry.getKey().getSwitchWas0())) {
+                                                entry.getKey().setSwitchState(true);
+                                            } else if (entry.getKey().getSwitchWas0()) {
+                                                entry.getKey().setSwitchState(false);
+                                            }
+                                            entry.getKey().setSwitchWas0(false);
+                                        } else entry.getKey().setSwitchWas0(true);
+                                        if (entry.getKey().getSwitchState() || (fdata == 1.0f)) {
+                                            servo(channel, entry.getKey().getSentValue(), 0, 100, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
+                                        }
                                     }
                                 }
-
                             }
                         }
 

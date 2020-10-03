@@ -139,6 +139,7 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
             GlobalProperties.getProperties().setProperty("DEVICE" + i, entry.getKey().toString());
             GlobalProperties.getProperties().setProperty("DCHANNEL" + i, entry.getValue().toString());
             GlobalProperties.getProperties().setProperty("CHANNEL_SV" + i, entry.getKey().getSentValue() + "");
+            GlobalProperties.getProperties().setProperty("CHARACTERISTIC" + i, entry.getKey().getCharacteristics());
             i++;
         }
     }

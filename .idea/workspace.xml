@@ -12,9 +12,12 @@
     <list default="true" id="1ece6322-92d2-4401-a478-d1071f5efd1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -216,10 +219,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="74" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1598718813581" />
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598545613921">
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601635366107">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1598545613921" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1601635366107" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598720973797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -276,10 +279,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1598721370170" />
-    <state x="389" y="97" width="587" height="534" key="find.popup" timestamp="1599457665538">
+    <state x="373" y="92" width="587" height="534" key="find.popup" timestamp="1601748549443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="97" width="587" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599457665538" />
+    <state x="373" y="92" width="587" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1601748549443" />
     <state x="327" y="0" key="new project wizard" timestamp="1598724002403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

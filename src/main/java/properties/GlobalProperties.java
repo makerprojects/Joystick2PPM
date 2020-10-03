@@ -60,6 +60,30 @@ public class GlobalProperties {
         }
         return null;
     }
+
+    public static String checkChannelCharacteristicForComponent(ComponentConfig componentConfig) {
+        Integer v;
+        String s;
+        try {
+            v = Integer.valueOf(properties.getProperty("DC","0"));
+        } catch (Exception e) {
+            return null;
+        }
+        for (int i = 1; i <= v; i++) {
+            if (properties.containsKey("DEVICE" + i) && properties.containsKey("CHARACTERISTICS" + i)) {
+                if (componentConfig.toString().equals(properties.getProperty("DEVICE" + i))) {
+                    try {
+                        s = properties.getProperty("CHARACTERISTICS" + i,"Button");
+                    } catch (Exception e) {
+                        return null;
+                    }
+                    return s;
+                }
+            }
+        }
+        return null;
+    }
+
     public static void loadProperties() {
         Properties props = new Properties();
         try {

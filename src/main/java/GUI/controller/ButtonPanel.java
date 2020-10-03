@@ -37,12 +37,10 @@ public class ButtonPanel extends JPanel implements ActionListener{
 
         Integer value = GlobalProperties.checkChannelForComponent(componentConfig);
         if (value != null ) {
-
             DeviceConfigPanel.addMapping(componentConfig, value, false);
             value = GlobalProperties.checkChannelSVForComponent(componentConfig);
             if (value != null)
                 componentConfig.setSentValue(value);
-
             assignBtn.setText("-");
         }
         //assignBtn.addActionListener(this);
