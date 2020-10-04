@@ -1,5 +1,6 @@
 package usb2ppm;
 
+import app.Main;
 import com.fazecast.jSerialComm.*;
 
 import GUI.controller.ComponentConfig;
@@ -201,7 +202,9 @@ public class Usb2PPMWorker implements Runnable {
     }
 
     private void servo( int channel, float value, float min, float max, boolean inverse, int trim, int epa) throws IOException {
-        System.out.println("send cmd ch="+channel +" min/max/val="+ String.format("%.1f",min)+ String.format("%.1f",max) +"/"+String.format("%.1f",value) + " trim="+trim + " epa="+epa);
+        if (Main.Debug.ON) {
+            System.out.println("send cmd ch=" + channel + " min/max/val=" + String.format("%.1f", min) + String.format("%.1f", max) + "/" + String.format("%.1f", value) + " trim=" + trim + " epa=" + epa);
+        }
         max = max - min;
         value =value - min;
         int data = (int)Math.floor(1024.0f*value / max);
@@ -238,11 +241,12 @@ public class Usb2PPMWorker implements Runnable {
         b[arrSize-2] =(byte)(value/256);
         b[arrSize-1] =(byte)(value%256);
         out.write(b);
-        System.out.println("send cmd v="+(getSetCommand() +((char)channel)+""+((char)(value/256)) +""+ ((char)(value%256))));
+        if (Main.Debug.ON) {
+            System.out.println("send cmd v=" + (getSetCommand() + ((char) channel) + "" + ((char) (value / 256)) + "" + ((char) (value % 256))));
+        }
         out.flush();
-
-
     }
+
     private void updateServoBar(int channel, int data) {
         for (DataSentEvent listener: listeners)
             listener.dataSent(channel, data);
