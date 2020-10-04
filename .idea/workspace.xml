@@ -11,14 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ece6322-92d2-4401-a478-d1071f5efd1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/net/java/jinput/jinput/2.0.9/jinput-2.0.9.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JoystickRC" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -231,10 +225,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598724765982" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1598724517892">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601750775091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598724517892" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601750775091" />
     <state width="1323" height="273" key="GridCell.Tab.0.bottom" timestamp="1599479195388">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

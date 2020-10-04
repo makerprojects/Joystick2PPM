@@ -70,10 +70,10 @@ public class GlobalProperties {
             return null;
         }
         for (int i = 1; i <= v; i++) {
-            if (properties.containsKey("DEVICE" + i) && properties.containsKey("CHARACTERISTICS" + i)) {
+            if (properties.containsKey("DEVICE" + i) && properties.containsKey("CHARACTERISTIC" + i)) {
                 if (componentConfig.toString().equals(properties.getProperty("DEVICE" + i))) {
                     try {
-                        s = properties.getProperty("CHARACTERISTICS" + i,"Button");
+                        s = properties.getProperty("CHARACTERISTIC" + i,"Button");
                     } catch (Exception e) {
                         return null;
                     }
