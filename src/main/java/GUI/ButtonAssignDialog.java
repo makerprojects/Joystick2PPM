@@ -39,20 +39,27 @@ public class ButtonAssignDialog extends JDialog implements ActionListener, Adjus
     private final JComboBox channels;
     private final JButton okBtn = new JButton("Ok");
     private final ComponentConfig component;
-    private final JScrollBar value = new JScrollBar(JScrollBar.HORIZONTAL, 50, 0, 0, 100);
-    private final JTextField field = new JTextField();
+    private final JScrollBar valueON = new JScrollBar(JScrollBar.HORIZONTAL, 50, 0, 0, 100);
+    private final JScrollBar valueOFF = new JScrollBar(JScrollBar.HORIZONTAL, 50, 0, 0, 100);
+    private final JTextField fieldON = new JTextField();
+    private final JTextField fieldOFF = new JTextField();
     private final JToggleButton characteristics = new JToggleButton("Button");
     public ButtonAssignDialog(ComponentConfig component) {
         super(MainFrame.getInstance(), true);
-        field.setEditable(false);
-        field.setMinimumSize(new Dimension(50, 20));
-        field.setText(component.getSentValue() + "%");
+        fieldON.setEditable(false);
+        fieldON.setMinimumSize(new Dimension(50, 20));
+        fieldON.setText(component.getSentValue() + "%");
+        fieldOFF.setEditable(false);
+        fieldOFF.setMinimumSize(new Dimension(50, 20));
+        fieldOFF.setText(component.getSentValueOFF() + "%");
         String s = checkChannelCharacteristicForComponent(component);
         if (s == null) s = "Button";
         characteristics.setText(s);
         channels = new JComboBox();
-        value.setValue(component.getSentValue());
-        value.addAdjustmentListener(this);
+        valueON.setValue(component.getSentValue());
+        valueON.addAdjustmentListener(this);
+        valueOFF.setValue(component.getSentValueOFF());
+        valueOFF.addAdjustmentListener(this);
         okBtn.addActionListener(this);
         characteristics.addActionListener(this);
         this.component = component;
@@ -73,21 +80,30 @@ public class ButtonAssignDialog extends JDialog implements ActionListener, Adjus
         add(channels,gbc);
 
         gbc = makegbc(0, 1, 2, 1);
-        add(new JLabel("Choose value: "),gbc);
+        add(new JLabel("Set ON value: "),gbc);
 
         gbc = makegbc(3, 1, 1, 1);
-        add(field, gbc); // value
+        add(fieldON, gbc); // value
 
         gbc = makegbc(2, 1, 1, 1);
-        add(value, gbc); // scrollbar
+        add(valueON, gbc); // scrollbar
 
         gbc = makegbc(0, 2, 2, 1);
-        add(new JLabel("Characteristic:"),gbc);
+        add(new JLabel("Set OFF value: "),gbc);
+
+        gbc = makegbc(3, 2, 1, 1);
+        add(fieldOFF, gbc); // value
 
         gbc = makegbc(2, 2, 1, 1);
+        add(valueOFF, gbc); // scrollbar
+
+        gbc = makegbc(0, 3, 2, 1);
+        add(new JLabel("Characteristic:"),gbc);
+
+        gbc = makegbc(2, 3, 1, 1);
         add (characteristics,gbc);
 
-        gbc = makegbc(3, 3, 1, 1);
+        gbc = makegbc(3, 4, 1, 1);
         add(okBtn,gbc);
 
         setTitle("Assign Buttons");
@@ -104,14 +120,19 @@ public class ButtonAssignDialog extends JDialog implements ActionListener, Adjus
             }
             characteristics.setText(component.getCharacteristics());
         } else {
-            component.setSentValue(value.getValue());
             DeviceConfigPanel.addMapping(component, (Integer) channels.getSelectedItem());
             setVisible(false);
         }
     }
 
     public void adjustmentValueChanged(AdjustmentEvent e) {
-        field.setText(e.getValue() + "%");
+        if(e.getSource() == valueON) {
+            fieldON.setText(e.getValue() + "%");
+            component.setSentValue(valueON.getValue());
+        } else {
+            fieldOFF.setText(e.getValue() + "%");
+            component.setSentValueOFF(valueOFF.getValue());
+        }
     }
 
     private GridBagConstraints makegbc(int x, int y, int width, int height) {

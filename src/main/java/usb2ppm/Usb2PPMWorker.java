@@ -149,7 +149,7 @@ public class Usb2PPMWorker implements Runnable {
                                     servo(channel, data, 0, 1024, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
                                 } else {
                                     if ((fdata == 0.0f) && ((entry.getKey().getCharacteristics() == "Button") || ((!entry.getKey().getSwitchState()) && (entry.getKey().getCharacteristics() == "Switch")))) {
-                                        servo(channel, 0, 0, 100, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
+                                        servo(channel, entry.getKey().getSentValueOFF(), 0, 100, parameterMap.get(entry.getValue()).isReverse(), parameterMap.get(entry.getValue()).getTrim(), parameterMap.get(entry.getValue()).getEpa());
                                         entry.getKey().setSwitchWas0(true);
                                     } else if ((fdata == 1.0f) || (entry.getKey().getCharacteristics() == "Switch")) {
                                         if ((entry.getKey().getCharacteristics() == "Switch") && (fdata == 1.0f)) {  // button is pushed

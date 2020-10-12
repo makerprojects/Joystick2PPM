@@ -61,6 +61,28 @@ public class GlobalProperties {
         return null;
     }
 
+    public static Integer checkChannelSV_OFFForComponent(ComponentConfig componentConfig) {
+        Integer v;
+        try {
+            v = Integer.valueOf(properties.getProperty("DC","0"));
+        } catch (Exception e) {
+            return null;
+        }
+        for (int i = 1; i <= v; i++) {
+            if (properties.containsKey("DEVICE" + i) && properties.containsKey("CHANNEL_SV_OFF" + i)) {
+                if (componentConfig.toString().equals(properties.getProperty("DEVICE" + i))) {
+                    try {
+                        v = Integer.valueOf(properties.getProperty("CHANNEL_SV_OFF" + i,"50"));
+                    } catch (Exception e) {
+                        return null;
+                    }
+                    return v;
+                }
+            }
+        }
+        return null;
+    }
+
     public static String checkChannelCharacteristicForComponent(ComponentConfig componentConfig) {
         Integer v;
         String s;

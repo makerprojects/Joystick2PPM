@@ -12,6 +12,7 @@ public class ComponentConfig {
     private float maxValue = 1.0f;
     private float minValue = -1.0f;
     private int sentValue = 50;
+    private int sentValueOFF = 50;
     private int prevValue = 512;
     private String characteristics = "Button";
     private boolean switchState = false;
@@ -46,8 +47,16 @@ public class ComponentConfig {
         return sentValue;
     }
 
+    public int getSentValueOFF() {
+        return sentValueOFF;
+    }
+
     public void setSentValue(int sentValue) {
         this.sentValue = sentValue;
+    }
+
+    public void setSentValueOFF(int sentValueOFF) {
+        this.sentValueOFF = sentValueOFF;
     }
 
     public ComponentConfig(Controller controller, Component component, boolean X) {
