@@ -64,6 +64,7 @@ public class ButtonAssignDialog extends JDialog implements ActionListener, Adjus
         characteristics.addActionListener(this);
         this.component = component;
         for (int i = 1; i <= DeviceConfigPanel.SERVO_COUNT; i++) {
+            if (!DeviceConfigPanel.getAssignMap().containsValue(i))
                 channels.addItem(i);
         }
         createLayout();

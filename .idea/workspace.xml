@@ -11,14 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ece6322-92d2-4401-a478-d1071f5efd1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Joystick2PPM/Joystick2PPM.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ButtonAssignDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DeviceConfigPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ButtonPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/ComponentConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/GlobalProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usb2ppm/Usb2PPMWorker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
