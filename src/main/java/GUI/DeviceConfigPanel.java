@@ -57,13 +57,13 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
     private final JRadioButton[] servoInv = new JRadioButton[SERVO_COUNT];
     private final JScrollBar[] servoTrim = new JScrollBar[SERVO_COUNT];
     private final JScrollBar[] servoEPA = new JScrollBar[SERVO_COUNT];
-    private final JRadioButton v2 = new JRadioButton("Compufly v2");
+    private final JRadioButton v2 = new JRadioButton("USB2PPM or Compufly v2");
     private final JComboBox modeBox = new JComboBox(new String[]{"Negative PPM (Futaba,Hitec,Esky,JR)","Positive PPM"});
     private final JButton connect = new JButton(CONNECT);
     //private Map<Integer, net.java.games.input.Component> =
 
 
-    private final JButton setModeBtn = new JButton("Set Chanel and Mode");
+    private final JButton setModeBtn = new JButton("Set Channels and Mode");
 
     private Thread workingThread;
     private Usb2PPMWorker worker;
@@ -77,8 +77,7 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
         for (int i = 0; i < ComRefTab.length; i++)
             ComRefTab[i] = 256;
         setModeBtn.addActionListener(this);
-        v2.setSelected(Boolean.parseBoolean(GlobalProperties.getProperties().getProperty("V2",Boolean.toString(false))));
-        //v2.setVisible(false);
+        v2.setSelected(Boolean.parseBoolean(GlobalProperties.getProperties().getProperty("V2",Boolean.toString(true))));
         v2.addActionListener(this);
         comBox = new JComboBox();
         SerialPort[] comPort = SerialPort.getCommPorts();
@@ -106,7 +105,7 @@ public class DeviceConfigPanel extends JPanel implements ActionListener, DataSen
                 }
             GlobalProperties.getProperties().setProperty("COM",(String)comBox.getSelectedItem());
         }
-        Integer value = Integer.valueOf(GlobalProperties.getProperties().getProperty("CHANNELS", "1"));
+        Integer value = Integer.valueOf(GlobalProperties.getProperties().getProperty("CHANNELS", "8"));
         channelsBox.setSelectedItem(value);
         GlobalProperties.getProperties().setProperty("CHANNELS", value.toString());
 

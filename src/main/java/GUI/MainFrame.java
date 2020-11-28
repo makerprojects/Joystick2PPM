@@ -40,7 +40,7 @@ public class MainFrame extends JFrame implements ControllerListener, ControllerA
         setPreferredSize(new Dimension(700, 600));
         setSize(getPreferredSize());
         tabs.setTabLayoutPolicy(JTabbedPane.WRAP_TAB_LAYOUT);
-        tabs.addTab("Device config", deviceConfigPanel);
+        tabs.addTab("Device configuration", deviceConfigPanel);
         for (Controller controller: controllerList)
             controllerChoosed(controller);
         add(tabs, BorderLayout.CENTER);
